@@ -38,4 +38,9 @@ public class TransaccionInmDAO {
         }
     }
     
+    /*
+        calculo impuestos
+        costos venta (comision)
+        calculo multa
+    */
 }

@@ -28,7 +28,8 @@ public class PropiedadDAO {
                 Date fechaReg = resultSet.getDate("fecha_registro");
                 String estado = resultSet.getString("estado"); 
                 
-                propiedad = new Propiedad(id, usuarioId, tipoProp, ciudad, pais, valor, fechaReg, estado);                                
+                propiedad = new Propiedad(usuarioId, tipoProp, ciudad, pais, valor, fechaReg, estado);
+                propiedad.setPropiedadId(id);
             }
             
         } catch (SQLException e) {
@@ -57,7 +58,8 @@ public class PropiedadDAO {
                 Date fechaReg = resultSet.getDate("fecha_registro");
                 String estado = resultSet.getString("estado");
 
-                Propiedad propiedad = new Propiedad(id, usuarioId, tipoProp, ciudad, pais, valor, fechaReg, estado);
+                Propiedad propiedad = new Propiedad(usuarioId, tipoProp, ciudad, pais, valor, fechaReg, estado);
+                propiedad.setPropiedadId(id);
 
                 if (propiedad != null) {
                     propiedades.add(propiedad);

@@ -15,8 +15,7 @@ public class Propiedad {
     public Propiedad() {
     }
 
-    public Propiedad(int propiedadId, int clienteId, String tipo, String ciudad, String pais, double valor, Date fechaApertura, String estado) {
-        this.propiedadId = propiedadId;
+    public Propiedad(int clienteId, String tipo, String ciudad, String pais, double valor, Date fechaApertura, String estado) {
         this.clienteId = clienteId;
         this.tipo = tipo;
         this.ciudad = ciudad;
